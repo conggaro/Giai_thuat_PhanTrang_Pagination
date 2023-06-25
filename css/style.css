@@ -1,0 +1,176 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e5e5e5;
+    
+    /* không ai được chiếm chỗ của body */
+    /* nên cho body là "relative" */
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container{
+    width: 1200px;
+    height: 700px;
+    background: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 20px;
+}
+
+ul.phan_trang{
+    width: 600px;
+    height: 60px;
+    border: solid 1px black;
+    border-radius: 60px;
+
+    /* chỗ này là thiết lập vị trí rồi */
+    position: absolute;
+    top: 600px;
+
+    /* xóa mấy cái dấu chấm của list đi */
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+}
+
+div[class="table"]{
+    width: 850px;
+    height: 520px;
+
+    /* thiết lập vị trí */
+    position: absolute;
+    top: 50px;
+}
+
+div[class="thead"]{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+div.th_1{
+    width: 200px;
+    height: 40px;
+    background: rgb(4, 170, 109);
+    color: white;
+    
+    text-align: center;         /* căn lề trái-phải của chữ ra giữa */
+    line-height: 40px;          /* căn lề trên-dưới của chữ ra giữa */
+    font-weight: bold;
+
+    /* thiết lập vị trí */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.th_2{
+    width: 650px;
+    height: 40px;
+    background: rgb(4, 170, 109);
+    color: white;
+    
+    text-align: center;         /* căn lề trái-phải của chữ ra giữa */
+    line-height: 40px;          /* căn lề trên-dưới của chữ ra giữa */
+    font-weight: bold;
+
+    /* thiết lập vị trí */
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
+div[class="tbody"]{
+    width: 850px;
+    height: 480px;
+
+    /* thiết lập vị trí */
+    position: relative;
+    top: 40px;
+    left: 0px;
+}
+
+div.ban_ghi{
+    display: none;
+    height: 48px;
+    position: relative;
+}
+
+div.td_1{
+    width: 200px;
+    height: 48px;
+    
+    text-align: center;         /* căn lề trái-phải của chữ ra giữa */
+    line-height: 48px;          /* căn lề trên-dưới của chữ ra giữa */
+
+    /* thiết lập vị trí */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.td_2{
+    width: 650px;
+    height: 48px;
+    
+    text-align: center;         /* căn lề trái-phải của chữ ra giữa */
+    line-height: 48px;          /* căn lề trên-dưới của chữ ra giữa */
+
+    /* thiết lập vị trí */
+    position: relative;
+    top: 0px;
+    left: 200px;
+}
+
+li{
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    line-height: 30px;
+    
+    /* biến con trỏ thành kiểu click */
+    cursor: pointer;
+}
+
+li:hover{
+    background: rgb(4, 170, 109);
+    color: white;
+    border-radius: 30px;
+}
+
+div.khung_cha{
+    width: 850px;
+    height: 520px;
+    border: solid 5px black;
+
+    /* thiết lập vị trí */
+    position: absolute;
+    top: 50px;
+}
+
+div.khung_con{
+    width: 10px;
+    height: 520px;
+    border-left: solid 5px black;
+
+    /* thiết lập vị trí */
+    position: absolute;
+    top: 55px;
+    left: 375px;
+}
